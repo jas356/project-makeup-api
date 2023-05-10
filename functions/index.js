@@ -1,19 +1,26 @@
+import functions from "firebase-functions"
 import express  from "express";
-import cors from "cors"
+import cors from "cors";
+import { login, signup } from "./src/users.js";
 
 const PORT = 3001
 
-const app = express()
+const app = express() // creates express app
 
-app.use(cors())
+app.use(cors())     //the () after cors is invoking the code running cors and same for express.json()
 app.use(express.json())
 
+//Routes (API functions) User Routes
+app.post("/signup", signup) //Signup invokes the function
+app.post("/login", login) //Login invokes function
 
-//My API points/ routes will be insterted below:
+app.get("/member-class", memberClass)
+app.post("/makeup-members", makeupMembers)
+//Routes
 app.get("/", (req, res) => {
     res.send(`My api is working`)
 })
 
-app.listen(PORT, () => {
-    console.log(`Listening on http://localhost:${PORT}`)
-})
+
+
+export const api = functions.https.onRequest(app)
