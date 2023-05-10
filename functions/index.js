@@ -2,8 +2,9 @@ import functions from "firebase-functions"
 import express  from "express";
 import cors from "cors";
 import { login, signup } from "./src/users.js";
+import { addMakeupMemberClass, getMakeupMembersClasses } from "./src/members.js"
 
-const PORT = 3001
+// const PORT = 3001
 
 const app = express() // creates express app
 
@@ -14,8 +15,8 @@ app.use(express.json())
 app.post("/signup", signup) //Signup invokes the function
 app.post("/login", login) //Login invokes function
 
-app.get("/member-class", memberClass)
-app.post("/makeup-members", makeupMembers)
+app.get("/create-member-class", getMakeupMembersClasses)
+app.post("/makeup-members", addMakeupMemberClass)
 //Routes
 app.get("/", (req, res) => {
     res.send(`My api is working`)

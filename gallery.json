@@ -1,0 +1,34 @@
+[
+   
+    {
+        "id": 1,
+        "image": "https://i.pinimg.com/736x/e0/92/fc/e092fc944b788e8a3a9fb883d4e20eb2.jpg",
+        "author": "Maya Angelou",
+        "quote": "I have learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."
+
+    },
+    {
+        "id": 2,
+        "image": "https://i.pinimg.com/564x/04/2e/ad/042eadb8ef3d9469522eed98a6a523e8.jpg",
+        "author": "Maya Angelou",
+        "quote": "Do the best you can until you know better. Then when you know better, do better."
+    },
+    {
+        "id": 3,
+        "image": "https://i.pinimg.com/564x/31/1f/cd/311fcd3f739992f7ed12448796f707e1.jpg",
+        "author": "Maya Angelou",
+        "quote": "When someone shows you who they are, believe them the first time."
+    },
+    {
+        "id": 4,
+        "image": "https://i.pinimg.com/736x/c6/75/ea/c675ea56a2ae121b6ae411e1881d3092.jpg",
+        "author": "Maya Angelou",
+        "quote": "If you find it in your heart to care for somebody else, you will have succeeded."
+    },
+    {
+        "id": 5,
+        "image": "https://i.pinimg.com/474x/36/b7/c3/36b7c3bb60fb2a14facaef447dced1ed.jpg",
+        "author": "Maya Angelou",
+        "quote": "What you are supposed to do when you do not like a thing is change it. If you can not change it, change the way you think about it. Do not complain."
+    }
+]

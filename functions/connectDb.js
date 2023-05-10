@@ -3,4 +3,4 @@ import { mongoUri } from "./secrets.js";
 
 const client = new MongoClient(mongoUri)
 
-export const db = client.db("makeup-members-collection")
+export const db = client.db("jasmine")
