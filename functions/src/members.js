@@ -9,7 +9,7 @@ export async function addMakeupMemberClass(req, res) {
     await coll.insertOne(newMember)
     // or just await coll.insertOne("newMember")
     .catch(err => {
-        res.status(500).send(err)
+        res.status(500).send(err) 
         return
     })
     res.status(201).send({message: "Member is successfully added to zoom (LIVE) class. Check email for zoom link 🥳"})
