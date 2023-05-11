@@ -28,12 +28,14 @@ export async function login(req, res) {
         res.status(400).send({message: "Email and Password are both required."})
         return
     }
-    const user = await collection.findOne({email: email.toLowerCase(), password})
-    
+    let user = await collection.findOne({email: email.toLowerCase(), password})
     if(!user) {
-        res.status(400).send({message: "Invalid Email and/or password. Try to login again."})
-    }
+            res.status(400).send({message: "Invalid Email and/or password. Try to login again."})
+            return
+        }
     delete user.password
    // const token = jwt.sign(user, secretKey)
    //res.send({user, token})
+   res.send({user})
+    
 }
