@@ -7,7 +7,7 @@ const coll = db.collection("makeup-members")
 export async function addMakeupMemberClass(req, res) {
     const newMember = req.body
     await coll.insertOne(newMember)
-    // or just await coll.insertOne("newMember")
+
     .catch(err => {
         res.status(500).send(err) 
         return
@@ -24,6 +24,6 @@ export async function getMakeupMembersClasses(req, res) {
 
 // export async function getMakeupMembersClasses(req, res) {
 //     const newMemberMessy = await coll.get()
-//     const newMembersClean = newMemberMessy.docs.map(doc => ({...doc.data(), id: doc.id}))
+//     const newMembersClean = newMemberMessy.docs.map(doc => ({...doc.data(), id: doc._id}))
 //     res.send(newMembersClean)
 // }

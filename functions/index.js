@@ -15,12 +15,12 @@ app.use(express.json())
 app.post("/signup", signup) //Signup invokes the function
 app.post("/login", login) //Login invokes function
 
-app.get("/member-classes", getMakeupMembersClasses)
+app.get("/makeup-member-classes", getMakeupMembersClasses)
 app.post("/makeup-members", addMakeupMemberClass)
 //Routes
-app.get("/", (req, res) => {
-    res.send(`My api is working`)
-})
+//app.get("/", (req, res) => {
+//  res.send(`My api is working`)
+// })
 
 
 
