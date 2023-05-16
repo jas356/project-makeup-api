@@ -1,7 +1,7 @@
 import { db } from "../connectDb.js";
-import { secretKey } from "../secrets.js";
-//import { ObjectId } from "mongodb";
-//import jwt from "jsonwebtoken"
+// import { secretKey } from "../secrets.js";
+import { ObjectId } from "mongodb";
+import jwt from "jsonwebtoken"
 
 const collection = db.collection("users")
 

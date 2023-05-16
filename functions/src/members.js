@@ -12,7 +12,7 @@ export async function addMakeupMemberClass(req, res) {
         res.status(500).send(err) 
         return
     })
-    res.status(201).send({message: "Member is successfully added to zoom (LIVE) class. Check email for zoom link 🥳"})
+    getMakeupMembersClasses(req, res)
 }
 
 //GET members info so it can display everyone who registered as a subscriber and what zoom(live class) class they signed up for.
