@@ -18,9 +18,9 @@ app.post("/login", login) //Login invokes function
 app.get("/makeup-member-classes", getMakeupMembersClasses)
 app.post("/makeup-members", addMakeupMemberClass)
 //Routes
-//app.get("/", (req, res) => {
-//  res.send(`My api is working`)
-// })
+app.get("/", (req, res) => {
+  res.send(`My api is working`)
+ })
 
 
 
