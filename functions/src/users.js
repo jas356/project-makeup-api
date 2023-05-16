@@ -1,5 +1,5 @@
 import { db } from "../connectDb.js";
-//import { secretKey } from "../secrets.js";
+import { secretKey } from "../secrets.js";
 //import { ObjectId } from "mongodb";
 //import jwt from "jsonwebtoken"
 
